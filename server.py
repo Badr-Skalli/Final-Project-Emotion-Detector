@@ -18,7 +18,7 @@ def detect_emotion():
     emotions = emotion_detector(statement)
 
     if emotions["dominant_emotion"] is None:
-        return "<b>Invalid text! Please try again!</b>"
+        return "<b>Invalid input! Try again.</b>"
 
     output = "For the given statement, the system response is "
     for index, (key, value) in enumerate(emotions.items()):
